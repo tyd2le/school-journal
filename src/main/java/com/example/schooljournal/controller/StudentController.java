@@ -25,4 +25,9 @@ public class StudentController {
     public List<Student> getByClass(@PathVariable String className) {
         return service.getStudentsByClass(className);
     }
+
+    @GetMapping("/all")
+    public List<Student> getAllStudents() {
+        return service.getAllStudents();
+    }
 }

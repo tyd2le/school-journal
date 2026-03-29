@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/sgrade")
+@RequestMapping("/grades")
 public class GradeController {
 
     private final GradeService service;

@@ -22,4 +22,8 @@ public class StudentService {
     public List<Student> getStudentsByClass(String className) {
         return repository.findByClassName(className);
     }
+
+    public List<Student> getAllStudents() {
+        return repository.findAll();
+    }
 }
